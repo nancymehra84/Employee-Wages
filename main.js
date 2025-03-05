@@ -2,8 +2,10 @@ const WAGE_PER_HOUR = 20;
 const FULL_TIME_HOURS = 8;
 const PART_TIME_HOURS = 4;
 
+// Generate a random work type (0 = No work, 1 = Part-time, 2 = Full-time)
 let workType = Math.floor(Math.random() * 3);
-let workHours = 0;
+
+let workHours;
 
 switch (workType) {
     case 1:
